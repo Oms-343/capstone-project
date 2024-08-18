@@ -1,8 +1,10 @@
 export default function Navbar() {
   return (
-    <nav>
-      <img src="/assets/Logo .svg" alt="" />
-      <ul>
+    <nav className="navbar">
+      <a href="/">
+        <img src="/assets/Logo .svg" alt="" />
+      </a>
+      <ul className="navigation-menu">
         <li>
           <a href="/#"> Home</a>
         </li>
@@ -22,6 +24,10 @@ export default function Navbar() {
           <a href="/#"> Login</a>
         </li>
       </ul>
+
+      <button className="hamburger-btn">
+        <img src="/assets/hamburger-icon.svg" alt="open navigation" />
+      </button>
     </nav>
   );
 }
