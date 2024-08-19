@@ -81,6 +81,7 @@
 .header p {
   margin-bottom: 16px;
   color: #edefee;
+  font-weight: bold;
 }
 
 .btn-cta {
@@ -93,6 +94,15 @@
   .header {
     display: flex;
     justify-content: space-around;
+  }
+
+  .header h1 {
+    text-wrap: nowrap;
+    font-size: 64px;
+  }
+
+  .header h3 {
+    font-size: 40px;
   }
 
   .header-text {
@@ -170,10 +180,27 @@
   .card-container {
     display: flex;
     gap: 24px;
+    justify-content: center;
+  }
+
+  .main h1 {
+    font-size: 40px;
+  }
+
+  .main-text {
+    width: auto;
+    margin-left: 420px;
   }
 
   .food-card {
-    flex: 1;
+    /* flex: 1; */
+    max-width: 350px;
+  }
+
+  .food-card img {
+    height: 300px;
+
+    object-fit: cover;
   }
 }
 

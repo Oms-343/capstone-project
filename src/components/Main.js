@@ -1,8 +1,10 @@
 function Main() {
   return (
     <main className="main">
-      <h1>This week specials</h1>
-      <button className="btn-cta-2">Online Menu</button>
+      <div className="main-text">
+        <h1>This week specials</h1>
+        <button className="btn-cta-2">Online Menu</button>
+      </div>
 
       <div className="card-container">
         <div className="food-card">
