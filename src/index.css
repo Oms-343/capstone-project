@@ -23,21 +23,31 @@
 .hamburger-btn {
   background: transparent;
   border: none;
+  cursor: pointer;
 }
 
 @media (min-width: 750px) {
+  .navbar {
+    justify-content: center;
+    gap: 64px;
+  }
+
   .navigation-menu {
     display: flex;
-
     gap: 12px;
   }
 
-  .navigation-menu ul li {
+  .navigation-menu li {
     list-style: none;
+  }
+
+  .hamburger-btn {
+    display: none;
   }
 
   .navigation-menu a {
     text-decoration: none;
+    color: #333333;
   }
 
   a:hover {
@@ -50,7 +60,8 @@
 .header {
   padding: 48px 32px;
   padding-top: 60px;
-  background-color: green;
+  background-color: #495e57;
+  position: relative;
 }
 
 .header img {
@@ -58,32 +69,58 @@
 }
 
 .header h1 {
-  margin-bottom: 24px;
+  margin-bottom: 4px;
+  color: #f4ce14;
 }
 
 .header h3 {
   margin-bottom: 16px;
+  color: #edefee;
 }
 
 .header p {
   margin-bottom: 16px;
+  color: #edefee;
 }
 
 .btn-cta {
   padding: 12px 24px;
-
+  background-color: #f4ce14;
   border-radius: 12px;
 }
 
 @media (min-width: 750px) {
   .header {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+  }
+
+  .header-text {
+    max-width: 300px;
+  }
+
+  .header img {
+    display: block;
+    border-radius: 15px;
+    object-fit: cover;
+    height: 100%;
+    position: absolute;
+    top: 58px;
+    right: 100px;
+  }
+}
+
+@media only screen and (min-width: 750px) and (max-width: 1000px) {
+  .header {
+    gap: 100px;
+  }
+
+  .header img {
+    width: 30%;
   }
 }
 
 /* Main styles */
-
 .main {
   padding: 48px 32px;
 }
@@ -92,6 +129,7 @@
   background-color: blue;
   border-radius: 12px;
   margin-bottom: 20px;
+  background-color: #edefee;
 }
 
 .food-card img {
@@ -120,11 +158,23 @@
   border-radius: 12px;
   margin-bottom: 24px;
   margin-top: 24px;
+  background-color: #f4ce14;
 }
 
 .btn-card {
   padding: 4px 8px;
   border-radius: 20px;
+}
+
+@media (min-width: 750px) {
+  .card-container {
+    display: flex;
+    gap: 24px;
+  }
+
+  .food-card {
+    flex: 1;
+  }
 }
 
 /* About section */
